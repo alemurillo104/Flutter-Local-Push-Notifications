@@ -16,15 +16,15 @@ class SecondScreen extends StatelessWidget {
         children: <Widget>[
           Text(
             'Second screen - Payload:',
-            style: Theme.of(context).textTheme.title,
+            style: Theme.of(context).textTheme.headline1,
           ),
           const SizedBox(height: 8),
           Text(
             payload,
-            style: Theme.of(context).textTheme.subtitle,
+            style: Theme.of(context).textTheme.subtitle1,
           ),
           const SizedBox(height: 8),
-          RaisedButton(
+          ElevatedButton(
             child: Text('Back'),
             onPressed: () => Navigator.pop(context),
           ),

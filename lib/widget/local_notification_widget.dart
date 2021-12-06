@@ -135,8 +135,8 @@ class _LocalNotificationWidgetState extends State<LocalNotificationWidget> {
             ],
           ),*/
           title('Basics Title'),
-          RaisedButton(
-            color: Colors.blueAccent,
+          ElevatedButton(
+            // color: Colors.blueAccent,
             child: Text(
               'Show notification',
               style: TextStyle(color: Colors.white, fontSize: 20.0),
@@ -144,8 +144,8 @@ class _LocalNotificationWidgetState extends State<LocalNotificationWidget> {
             onPressed: () => showOngoingNotification(notifications,
                 title: 'Title', body: 'Body'),
           ),
-          RaisedButton(
-            color: Colors.blueAccent,
+          ElevatedButton(
+            // color: Colors.blueAccent,
             child: Text(
               'Replace notification',
               style: TextStyle(color: Colors.white, fontSize: 20.0),
@@ -154,8 +154,8 @@ class _LocalNotificationWidgetState extends State<LocalNotificationWidget> {
                 title: 'ReplacedTitle', body: 'ReplacedBody'),
           ),
           //Other notification with a different id
-          RaisedButton(
-            color: Colors.blueAccent,
+          ElevatedButton(
+            // color: Colors.blueAccent,
             child: Text(
               'Other notification',
               style: TextStyle(color: Colors.white, fontSize: 20.0),
@@ -165,8 +165,8 @@ class _LocalNotificationWidgetState extends State<LocalNotificationWidget> {
           ),
           const SizedBox(height: 32),
           title('Feautures'),
-          RaisedButton(
-            color: Colors.blueAccent,
+          ElevatedButton(
+            // color: Colors.blueAccent,
             child: Text(
               'Silent notification',
               style: TextStyle(color: Colors.white, fontSize: 20.0),
@@ -177,7 +177,8 @@ class _LocalNotificationWidgetState extends State<LocalNotificationWidget> {
 
           const SizedBox(height: 32),
           title('Other Feautures'),
-          RaisedButton(
+          ElevatedButton(
+            onPressed: (){ print('no esta implementado we ');},
             child: Text('Show image (small)'),
             /*onPressed: (){
               showIconNotification(
@@ -190,7 +191,7 @@ class _LocalNotificationWidgetState extends State<LocalNotificationWidget> {
               );
             },*/
           ),
-          /*RaisedButton(
+          /*ElevatedButton(
             child: Text('Show image (big)'),
             onPressed: () => showImageNotification(
               context,
@@ -201,7 +202,7 @@ class _LocalNotificationWidgetState extends State<LocalNotificationWidget> {
               id: 40,
             ),
           ),
-          RaisedButton(
+          ElevatedButton(
             child: Text('Show image (big+small)'),
             onPressed: () => showIconAndImageNotification(
               context,
@@ -216,8 +217,8 @@ class _LocalNotificationWidgetState extends State<LocalNotificationWidget> {
 
           const SizedBox(height: 60),
           title('Cancel'),
-          RaisedButton(
-            color: Colors.redAccent,
+          ElevatedButton(
+            // color: Colors.redAccent,
             child: Text(
               'Cancel all notification',
               style: TextStyle(color: Colors.white, fontSize: 20.0),

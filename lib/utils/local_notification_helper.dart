@@ -1,9 +1,10 @@
 import 'dart:async';
-import 'dart:ui';
+// import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:localpushnotifications/utils/save_image.dart';
+// import 'package:localpushnotifications/utils/save_image.dart';
 import 'package:meta/meta.dart';
 
 NotificationDetails get _noSound {
@@ -59,28 +60,27 @@ Future _showNotification(
 }) =>
     notifications.show(id, title, body, type);
 
-/*Future<NotificationDetails> _icon(BuildContext context, Image icon) async {
-  final iconPath = await saveImage(context, icon);
+// Future<NotificationDetails> _icon(BuildContext context, Image icon) async {
+//   final iconPath = await saveImage(context, icon);
 
-  final androidPlatformChannelSpecifics = AndroidNotificationDetails(
-    'big text channel id',
-    'big text channel name',
-    'big text channel description',
-    largeIcon: iconPath,
-    largeIconBitmapSource: BitmapSource.FilePath,
-  );
-  return NotificationDetails(androidPlatformChannelSpecifics, null);
-}
+//   final androidPlatformChannelSpecifics = AndroidNotificationDetails(
+//     'big text channel id',
+//     'big text channel name',
+//     'big text channel description',
+//     largeIcon: iconPath    
+//   );
+//   return NotificationDetails(androidPlatformChannelSpecifics, null);
+// }
 
-Future showIconNotification(
-  BuildContext context,
-  FlutterLocalNotificationsPlugin notifications, {
-  @required String title,
-  @required String body,
-  @required Image icon,
-  int id = 0,
-}) async =>
-    notifications.show(id, title, body, await _icon(context, icon));*/
+// Future showIconNotification(
+//   BuildContext context,
+//   FlutterLocalNotificationsPlugin notifications, {
+//   @required String title,
+//   @required String body,
+//   @required Image icon,
+//   int id = 0,
+// }) async =>
+//     notifications.show(id, title, body, await _icon(context, icon));
 
 ////----
 /*Future<NotificationDetails> _image(BuildContext context, Image picture) async {
